@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Define o tipo de documento como HTML5 -->
+        <meta charset="UTF-8" />
+        <!-- Define a codificação de caracteres como UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <!-- Meta tag for the page description, used by search engines -->
+         <meta name="description" content="Portfólio de Marcos Vinicius.">   
+        <!-- Meta tag for keywords, helps in SEO of the page -->
+        <meta name="keywords" content="Desenvolvedor Java, Desenvolvimento Backend, API REST, Microservices, Spring Boot, Java, Engenheiro de Software, Portfólio Java">
+        
+        <meta name="author" content="Marcos Vinicius">
+        <!-- Garante a exibição do documento no modo de compatibilidade mais recente do Internet Explorer -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Configura o viewport para garantir um layout responsivo -->
+        <title>Marcos Vinicius • Perfil</title>
+        <!-- Define o título da página que será exibido na aba do navegador -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Vincula o arquivo de estilos CSS externo para estilizar a página -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Adiciona o favicon -->
+        <link rel="icon" href="img\letter-m (4).png" type="image/x-icon">
+    </head>
+    
+<body>
+    <main class="card" data-tilt data-tilt-max="10" data-tilt-speed="1000">
+        <!-- Contém a estrutura principal do cartão de visita -->
+        <div class="info-section">
+            <!-- Seção para informações pessoais -->
+            <picture>
+                <!-- Elemento para incluir uma imagem -->
+                <img src="img\profile-pic (16).png" alt="Foto de perfil"
+                <!-- Imagem de perfil com texto alternativo -->
+            </picture>
+            <h1 class="name">Marcos Vinicius</h1>
+            <!-- Nome do perfil -->
+            <h2 class="title typedtext"></h2>
+            <!-- Cargo do perfil -->
+        </div>
+
+        <div class="content-section">
+            <!-- Seção para o conteúdo adicional -->
+            <div class="tabs">
+                <!-- Contém abas para navegação entre diferentes seções de informação -->
+                <div id="information-about-me" class="tab-content selected">
+                    <!-- Seção específica sobre o usuário, inicialmente selecionada -->    
+                    <ul class="social-links">
+                        <li><a href="https://marcos-anjos.github.io/Java-Backend-Portfolio/" class="portfolio" target="_blank"><i class="fa-solid fa-briefcase"></i> Portfólio</a></li>
+                        <li><a href="https://www.linkedin.com/in/marcosvmanjos/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/marcos-anjos" class="github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                        <li><a href="https://discord.com/users/seu_discord_id" class="discord" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></li>
+                        <li><a href="https://www.kaggle.com/marcosvinicius" class="kaggle" target="_blank"><i class="fa-brands fa-kaggle"></i> Kaggle</a></li>
+                        <li><a href="mailto:marcosvinicius@email.com" class="email"><i class="fa-solid fa-envelope"></i> E-mail</a></li>                     
+                    </ul> 
+                                      
+                </div>            
+            </div>                     
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- Vincula o arquivo de script JavaScript externo para funcionalidades adicionais -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>

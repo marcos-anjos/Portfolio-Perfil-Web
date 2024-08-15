@@ -1,7 +1,7 @@
 /* Estilo global aplicado a todos os elementos */
 * {
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
     box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo da largura e altura */
 }
 
@@ -18,18 +18,18 @@ a {
 
 /* Estilo para o corpo da página */
 body {
-    background-image: url(img-3.jpg) !important; /* Força a aplicação da imagem de fundo */
+    background-image: url(img-3.jpg) !important; /* Define a imagem de fundo da página e força a aplicação */
     background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
     background-size: cover; /* Faz com que a imagem de fundo cubra toda a área visível */
     background-position: center; /* Centraliza a imagem de fundo */
-
-    font-family: 'VT323', monospace;
+    
+    font-family: 'VT323', monospace; /* Define a fonte do texto */
     color: #f3f3f3; /* Define a cor do texto */
     font-size: 18px; /* Define o tamanho da fonte */
     display: flex; /* Usa Flexbox para layout */
     justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
     align-items: center; /* Alinha o conteúdo verticalmente no centro */
-    min-height: 100vh; /* Define a altura mínima para 100% da altura da viewport */
+    min-height: 100vh; /* Define a altura mínima da página como 100% da altura da viewport */
     padding: 30px; /* Adiciona preenchimento ao redor do conteúdo */
 }
 
@@ -71,8 +71,8 @@ body {
 /* Estilo para o título do trabalho na seção de informações */
 .card .info-section .title {
     font-size: 17px; /* Define o tamanho da fonte para o título do trabalho */
-    margin-top: 10px;
-    margin-bottom: -10px;
+    margin-top: 10px; /* Adiciona margem superior */
+    margin-bottom: -10px; /* Remove margem inferior */
     color: #f3f3f38a; /* Define a cor do texto com opacidade */
 }
 
@@ -99,65 +99,68 @@ body {
 }
 
 .social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    max-height: 480px;
-    overflow-y: auto;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    max-height: 480px; /* Define a altura máxima da lista */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura máxima */
 }
 
+/* Estilo para os links sociais dentro da lista */
 .social-links li a {
-    width: 350px;
-    display: block;
-    color: #f3f3f3;
-    text-align: center;
-    border-radius: 4%;
-    padding: 10px;
-    font-size: 16px;
-    transition: background 1s;
-    border: 2px solid #f3f3f38a;
+    width: 350px; /* Define a largura dos links */
+    display: block; /* Faz com que os links ocupem a largura definida */
+    color: #f3f3f3; /* Define a cor do texto dos links */
+    text-align: center; /* Centraliza o texto dos links */
+    border-radius: 4%; /* Adiciona arredondamento às bordas dos links */
+    padding: 10px; /* Adiciona preenchimento aos links */
+    font-size: 16px; /* Define o tamanho da fonte dos links */
+    transition: background 1s; /* Adiciona uma transição suave para a cor de fundo */
+    border: 2px solid #f3f3f38a; /* Adiciona uma borda aos links */
 }
 
+/* Estilos específicos para diferentes tipos de links sociais */
 .social-links .linkedin {
-    background-color: #27272700;
+    background-color: #27272700; /* Cor de fundo padrão (transparente) */
 }
 
 .social-links .linkedin:hover {
-    background-color: #986dff;
+    background-color: #986dff; /* Cor de fundo ao passar o mouse */
 }
 
 .social-links .github {
-    background-color: #27272700;
+    background-color: #27272700; /* Cor de fundo padrão (transparente) */
 }
 
 .social-links .github:hover {
-    background-color: #986dff;
+    background-color: #986dff; /* Cor de fundo ao passar o mouse */
 }
 
 .social-links .portfolio {
-    background-color: #27272700;
+    background-color: #27272700; /* Cor de fundo padrão (transparente) */
 }
 
 .social-links .portfolio:hover {
-    background-color: #986dff;
+    background-color: #986dff; /* Cor de fundo ao passar o mouse */
 }
 
 .social-links .kaggle {
-    background-color: #27272700;
+    background-color: #27272700; /* Cor de fundo padrão (transparente) */
 }
 
 .social-links .kaggle:hover {
-    background-color: #986dff;
+    background-color: #986dff; /* Cor de fundo ao passar o mouse */
 }
 
 .social-links .email {
-    background-color: #27272700;
+    background-color: #27272700; /* Cor de fundo padrão (transparente) */
 }
 
 .social-links .email:hover {
-    background-color: #986dff;
+    background-color: #986dff; /* Cor de fundo ao passar o mouse */
 }
+
 /* Estilo para o link do Discord */
 .social-links .discord {
     background-color: #27272700; /* Cor de fundo padrão (transparente) */
@@ -167,8 +170,73 @@ body {
     background-color: #986dff; /* Cor de fundo ao passar o mouse */
 }
 
+/* Estilo para os ícones dentro dos links sociais */
 .social-links i {
-    font-size: 20px; /* Ajuste o valor conforme necessário */
-    padding-right: 10px; /* Ajuste o valor conforme necessário */
+    font-size: 20px; /* Define o tamanho da fonte dos ícones */
+    padding-right: 10px; /* Adiciona espaçamento à direita dos ícones */
+}
 
+/* Estilo para os botões das abas */
+.tabs .tab-buttons {
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: space-evenly; /* Distribui os botões igualmente ao longo do contêiner */
+    background-color: #27272700; /* Define a cor de fundo das abas com opacidade */
+    padding: 15px; /* Adiciona preenchimento aos botões das abas */
+    position: relative; /* Necessário para posicionar a linha inferior */
+    border-radius: 5px 5px 0 0; /* Arredonda os cantos superiores dos botões */
+}
+
+/* Linha inferior das abas */
+.tabs .tab-buttons::after {
+    content: ""; /* Cria um elemento vazio para a linha */
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    bottom: 0; /* Posiciona a linha na parte inferior */
+    left: 50%; /* Alinha o centro da linha com o centro do contêiner */
+    transform: translateX(-50%); /* Ajusta o posicionamento da linha */
+    width: 50%; /* Define a largura da linha */
+    border-bottom: 1.9px solid #986dff; /* Define o estilo da linha */
+}
+
+/* Estilo para os botões das abas individuais */
+.tabs .tab-buttons .tab-button {
+    padding: 10px 20px; /* Adiciona preenchimento aos botões */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    color: #f3f3f3; /* Define a cor do texto dos botões */
+    font-size: 16px; /* Define o tamanho da fonte dos botões */
+    border: 2px solid #f3f3f38a; /* Adiciona uma borda aos botões */
+    border-radius: 4%; /* Adiciona o mesmo arredondamento dos links sociais */
+    background-color: #27272700; /* Define a cor de fundo dos botões com transparência */
+    transition: background-color 1s, color 0.3s ease; /* Adiciona transições suaves para cor de fundo e texto */
+}
+
+/* Estilo para o botão das abas ao passar o mouse */
+.tabs .tab-buttons .tab-button:hover {
+    background-color: #986dff; /* Altera a cor de fundo ao passar o mouse */
+    color: #f3f3f3; /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Estilo para o botão das abas selecionado */
+.tabs .tab-buttons .tab-button.selected {
+    background-color: #986dff; /* Define a cor de fundo para o botão selecionado */
+    color: #f3f3f3; /* Define a cor do texto para o botão selecionado */
+}
+
+/* Esconde o conteúdo das abas por padrão */
+.tabs .tab-content {
+    display: none; /* Oculta o conteúdo das abas por padrão */
+    padding: 15px; /* Adiciona preenchimento ao conteúdo das abas */
+}
+
+/* Exibe o conteúdo da aba selecionada */
+.tabs .tab-content.selected {
+    display: block; /* Exibe o conteúdo da aba selecionada */
+    text-align: justify; /* Justifica o texto no conteúdo da aba */
+}
+
+/* Ajuste de layout para o conteúdo da aba "Sobre Mim" */
+.tab-content#about-me {
+    color: #f3f3f3; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    line-height: 1.5; /* Define a altura da linha */
+    padding: 30px; /* Adiciona preenchimento ao conteúdo da aba */
 }
