@@ -1,4 +1,4 @@
 // Inicializa o efeito de digitação quando o DOM está completamente carregado
-document.addEventListener("DOMContentLoaded", function() { var typed = new Typed(".typedtext", { strings: ["Desenvolvedor Backend"], typeSpeed: 100, backSpeed: 100, backDelay: 3000, loop: false, showCursor: false, cursorChar: '|' }); });
+document.addEventListener("DOMContentLoaded", function() { var typed = new Typed(".typedtext", { strings: ["Engenheiro de Software", "Desenvolvedor Backend"], typeSpeed: 100, backSpeed: 100, backDelay: 2000, loop: true, showCursor: false, cursorChar: '|' }); });
 // Adiciona a funcionalidade de troca de abas quando um botão é clicado
 document.querySelectorAll('.tab-button').forEach(button => { button.addEventListener('click', () => { const tabButtons = button.parentElement.children; const tabContents = document.querySelectorAll('.tab-content'); const targetTab = button.getAttribute('data-tab'); Array.from(tabButtons).forEach(btn => btn.classList.remove('selected')); tabContents.forEach(content => content.classList.remove('selected')); button.classList.add('selected'); document.getElementById(targetTab).classList.add('selected'); }); });
