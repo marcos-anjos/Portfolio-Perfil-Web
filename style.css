@@ -18,7 +18,7 @@ a {
 
 /* Estilo para o corpo da página */
 body {
-    background-image: url(img-3.jpg) !important; /* Define a imagem de fundo da página e força a aplicação */
+    background-image: url(img.jpg) !important; /* Define a imagem de fundo da página e força a aplicação */
     background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
     background-size: cover; /* Faz com que a imagem de fundo cubra toda a área visível */
     background-position: center; /* Centraliza a imagem de fundo */
