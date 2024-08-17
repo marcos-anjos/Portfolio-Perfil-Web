@@ -37,7 +37,7 @@ body {
     background: linear-gradient(145deg, rgba(39, 39, 39, 0.4), rgba(29, 29, 29, 0.3)); /* Gradiente com menos opacidade */
     backdrop-filter: blur(3px); /* Desfoque reduzido */
     width: 430px;
-    border: 2px solid rgba(153, 109, 255, 0.7); /* Borda com maior espessura e opacidade */
+    border: 2px solid rgba(153, 109, 255, 0.8); /* Borda com maior espessura e opacidade */
     border-radius: 15px;
     overflow: hidden;
     outline: none;
@@ -98,7 +98,7 @@ body {
 
 /* Estilo para as abas de informações */
 .card .tabs {
-    background-color: rgba(39, 39, 39, 0.2);
+    background-color: rgba(39, 39, 39, 0);
     border-radius: 5px;
     margin-top: 15px;
 }
@@ -107,7 +107,7 @@ body {
 .tabs .tab-buttons {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(39, 39, 39, 0.2);
+    background-color: rgba(39, 39, 39, 0);
     padding: 15px;
     position: relative;
     border-radius: 5px 5px 0 0;
@@ -132,7 +132,7 @@ body {
     font-size: 16px;
     border: 2px solid #f3f3f38a;
     border-radius: 4%;
-    background-color: rgba(39, 39, 39, 0.2);
+    background-color: rgba(39, 39, 39, 0);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -204,7 +204,7 @@ body {
 .social-links .kaggle,
 .social-links .email,
 .social-links .discord {
-    background-color: rgba(39, 39, 39, 0.2);
+    background-color: rgba(39, 39, 39, 0);
 }
 
 .social-links .linkedin:hover,
@@ -269,4 +269,8 @@ body {
 }
 #social-links .social-links li:nth-child(6) {
     animation-delay: 0.5s;
+}
+.typed-cursor {
+    color: #f3f3f38a; /* Cor vibrante para maior visibilidade */
+    font-size: 0.7em; /* Tamanho ajustado para visibilidade adequada */
 }
