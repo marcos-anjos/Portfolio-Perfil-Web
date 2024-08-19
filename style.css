@@ -18,7 +18,7 @@ a {
 
 /* Estilo para o corpo da página */
 body {
-    background-image: url(img.jpg) !important;
+    background-image: url(img8.gif) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,7 +35,7 @@ body {
 /* Estilo para o cartão de visita */
 .card {
     background: linear-gradient(145deg, rgba(39, 39, 39, 0.4), rgba(29, 29, 29, 0.3)); /* Gradiente com menos opacidade */
-    backdrop-filter: blur(3px); /* Desfoque reduzido */
+    backdrop-filter: blur(10px); /* Desfoque reduzido */
     width: 430px;
     border: 2px solid rgba(153, 109, 255, 0.8); /* Borda com maior espessura e opacidade */
     border-radius: 15px;
