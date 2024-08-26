@@ -17,13 +17,14 @@
 </head>
 <body>
     <!-- Principal conteúdo da página -->
-    <main class="card" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+    <main class="card" data-tilt data-tilt-max="5" data-tilt-speed="10000">
         <!-- Seção de informações pessoais -->
         <div class="info-section">
             <!-- Imagem de perfil -->
-            <picture>
-                <img src="img\Transhumans - Waiting (2).png" alt="Foto de perfil">
-            </picture>
+            <img src="img/Transhumans - Waiting (2).png" 
+                 alt="Imagem de Perfil" 
+                 onmouseover="this.src='img/Crumb Cat GIF - Crumb Cat - Discover & Share GIFs.gif';" 
+                 onmouseout="this.src='img/Transhumans - Waiting (2).png';">
             <!-- Nome e título do usuário -->
             <h1 class="name">Marcos Vinicius</h1>
             <!-- Área para texto digitado dinamicamente -->
@@ -31,6 +32,7 @@
                 <span class="title typedtext"></span>
             </h2>
         </div>
+        
 
         <!-- Seção de conteúdo -->
         <div class="content-section">

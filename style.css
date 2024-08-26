@@ -34,23 +34,19 @@ body {
 
 /* Estilo para o cartão de visita */
 .card {
-    background: linear-gradient(145deg, rgba(39, 39, 39, 0.2), rgba(29, 29, 29, 0.1)); /* Gradiente com menos opacidade */
-    backdrop-filter: blur(10px); /* Desfoque reduzido */
+    background: linear-gradient(145deg, rgba(39, 39, 39, 0.1), rgba(29, 29, 29, 0.1)); /* Gradiente com leve aumento na opacidade */
+    backdrop-filter: blur(10px); /* Desfoque um pouco mais acentuado */
     width: 430px;
-    border: 1.9px solid rgba(153, 109, 255, 0.8); /* Borda com maior espessura e opacidade */
-    border-radius: 30px;
+    border: 2px solid rgba(153, 109, 255, 0.3); /* Borda com opacidade ligeiramente maior */
+    border-radius: 16px; /* Borda mais arredondada para um toque suave */
     overflow: hidden;
     outline: none;
-    box-shadow: 0 0px 10px rgba(153, 109, 255, 0.4); /* Sombra mais suave */
-    transition: all 0.3s ease; /* Transição suave */
+    transition: all 0.4s ease; /* Transição ainda mais suave */
 }
 
 .card:hover {
-    transform: scale(1.02); /* Aumenta levemente o tamanho do cartão ao passar o mouse */
-}
-
-.card:focus {
-    box-shadow: 0 8px 30px rgba(153, 109, 255, 0.8), 0 0 0 4px rgba(153, 109, 255, 0.3); /* Sombra mais pronunciada ao focar no cartão */
+    box-shadow: 0 10px 20px rgba(153, 109, 255, 0.4); /* Sombra para dar destaque */
+    border-color: rgba(153, 109, 255, 0.5); /* Intensifica a borda ao passar o mouse */
 }
 
 /* Estilo para a seção de informações no cartão */
@@ -62,15 +58,24 @@ body {
     gap: 10px;
 }
 
-/* Estilo para a imagem de perfil dentro da seção de informações */
+/* Estilo refinado para a imagem de perfil dentro da seção de informações */
 .card .info-section img {
     width: 10rem;
     height: auto;
     border-radius: 50%;
-    border: 1.9px solid #986dff;
-    box-shadow: 0 0 30px #986dff;
-    transition: transform 0.3s ease; /* Transição suave na transformação */
+    border: 2px solid #986dff;
+    box-shadow: 0 0 30px rgba(153, 109, 255, 0.6);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    content: url('img/Transhumans - Waiting (2).png'); /* Imagem inicial */
 }
+
+.card .info-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(153, 109, 255, 0.8);
+    content: url('img/Crumb Cat GIF - Crumb Cat - Discover & Share GIFs.gif'); /* Imagem ao passar o mouse */
+}
+
+
 
 /* Estilo para o nome na seção de informações */
 .card .info-section .name {
@@ -124,26 +129,30 @@ body {
     border-bottom: 1.9px solid #986dff;
 }
 
-/* Estilo para os botões das abas individuais */
+/* Estilo refinado para os botões das abas individuais */
 .tabs .tab-buttons .tab-button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
-    color: #f3f3f3;
+    color: #ffffff;
     font-size: 16px;
-    border: 1px solid #f3f3f38a;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
-    background-color: rgba(39, 39, 39, 0);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
 }
 
 .tabs .tab-buttons .tab-button:hover {
-    background-color: #986dff;
-    color: #f3f3f3;
+    background-color: rgba(153, 109, 255, 0.2);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(153, 109, 255, 0.3);
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
 }
 
 .tabs .tab-buttons .tab-button.selected {
     background-color: #986dff;
     color: #f3f3f3;
+    box-shadow: 0 6px 12px rgba(153, 109, 255, 0.5);
+    transform: translateY(-2px); /* Mantém o efeito de elevação quando selecionado */
 }
 
 /* Esconde o conteúdo das abas por padrão */
@@ -169,7 +178,7 @@ body {
     padding: 30px;
 }
 
-/* Estilo para a seção de links sociais */
+/* Estilo aprimorado para a seção de links sociais */
 .social-links {
     display: flex;
     flex-direction: column;
@@ -177,24 +186,34 @@ body {
     align-items: center;
     max-height: 480px;
     overflow-y: auto;
+    padding: 10px 0;
 }
 
-/* Estilo para os links sociais dentro da lista */
+/* Estilo aprimorado para os links sociais dentro da lista */
 .social-links li a {
     width: 350px;
-    display: block;
-    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
     text-align: center;
     border-radius: 30px;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    border: 1px solid #f3f3f38a;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+.social-links li a:hover {
+    background-color: rgba(153, 109, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(153, 109, 255, 0.3);
 }
 
 .social-links li a:active {
-    transform: scale(0.98); /* Pequeno efeito de redução ao clicar */
-    background-color: #7a5bff; /* Cor de fundo levemente alterada ao clicar */
+    transform: scale(0.98);
+    background-color: rgba(153, 109, 255, 0.8);
+    box-shadow: 0 6px 15px rgba(153, 109, 255, 0.5);
 }
 
 /* Estilos específicos para diferentes tipos de links sociais */
@@ -204,7 +223,7 @@ body {
 .social-links .kaggle,
 .social-links .email,
 .social-links .discord {
-    background-color: rgba(39, 39, 39, 0);
+    background-color: transparent;
 }
 
 .social-links .linkedin:hover,
@@ -213,14 +232,21 @@ body {
 .social-links .kaggle:hover,
 .social-links .email:hover,
 .social-links .discord:hover {
-    background-color: #986dff;
+    background-color: rgba(153, 109, 255, 0.4);
 }
 
-/* Estilo para os ícones dentro dos links sociais */
+/* Estilo aprimorado para os ícones dentro dos links sociais */
 .social-links i {
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 12px;
+    color: #ffffff;
+    transition: color 0.3s ease;
 }
+
+.social-links li a:hover i {
+    color: #ffffff;
+}
+
 
 /* Media Query para ajuste em telas pequenas */
 @media (max-width: 480px) {
