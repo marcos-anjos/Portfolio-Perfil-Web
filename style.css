@@ -34,14 +34,14 @@ body {
 
 /* Estilo para o cartão de visita */
 .card {
-    background: linear-gradient(145deg, rgba(39, 39, 39, 0.4), rgba(29, 29, 29, 0.3)); /* Gradiente com menos opacidade */
+    background: linear-gradient(145deg, rgba(39, 39, 39, 0.2), rgba(29, 29, 29, 0.1)); /* Gradiente com menos opacidade */
     backdrop-filter: blur(10px); /* Desfoque reduzido */
     width: 430px;
-    border: 2px solid rgba(153, 109, 255, 0.8); /* Borda com maior espessura e opacidade */
-    border-radius: 15px;
+    border: 1.9px solid rgba(153, 109, 255, 0.8); /* Borda com maior espessura e opacidade */
+    border-radius: 30px;
     overflow: hidden;
     outline: none;
-    box-shadow: 0 8px 30px rgba(153, 109, 255, 0.4); /* Sombra mais suave */
+    box-shadow: 0 0px 10px rgba(153, 109, 255, 0.4); /* Sombra mais suave */
     transition: all 0.3s ease; /* Transição suave */
 }
 
@@ -108,7 +108,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(39, 39, 39, 0);
-    padding: 15px;
+    padding: 20px;
     position: relative;
     border-radius: 5px 5px 0 0;
 }
@@ -130,8 +130,8 @@ body {
     cursor: pointer;
     color: #f3f3f3;
     font-size: 16px;
-    border: 2px solid #f3f3f38a;
-    border-radius: 4%;
+    border: 1px solid #f3f3f38a;
+    border-radius: 30px;
     background-color: rgba(39, 39, 39, 0);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -185,11 +185,11 @@ body {
     display: block;
     color: #f3f3f3;
     text-align: center;
-    border-radius: 4%;
+    border-radius: 30px;
     padding: 10px;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    border: 2px solid #f3f3f38a;
+    border: 1px solid #f3f3f38a;
 }
 
 .social-links li a:active {
@@ -237,13 +237,19 @@ body {
 @keyframes slideIn {
     from {
         transform: translateX(-20px); /* Começa deslocado para a esquerda */
-        opacity: 0; /* Inicialmente invisível */
+        opacity: 0; /* Transparente no início */
     }
     to {
-        transform: translateX(0); /* Termina na posição original */
-        opacity: 1; /* Totalmente visível */
+        transform: translateX(0); /* Volta à posição original */
+        opacity: 1; /* Opacidade total no final */
     }
 }
+
+/* Aplica a animação slide-in para o conteúdo das abas */
+.tab-content.selected {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
 
 /* Aplica a animação slide-in a todos os itens da lista social-links */
 #social-links .social-links li {
