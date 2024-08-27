@@ -61,7 +61,7 @@ body {
 /* Estilo refinado para a imagem de perfil dentro da seção de informações */
 .card .info-section img {
     width: 10rem;
-    height: auto;
+    height: 10rem;
     border-radius: 50%;
     border: 2px solid #986dff;
     box-shadow: 0 0 30px rgba(153, 109, 255, 0.6);
