@@ -170,6 +170,8 @@ body {
     opacity: 0;
     transition: opacity 0.5s ease, max-height 0.5s ease;
     padding: 15px;
+    height: 390px; /* Defina a altura fixa para o conteúdo */
+
 }
 
 /* Exibe o conteúdo da aba selecionada */
