@@ -37,7 +37,7 @@ body {
     background: linear-gradient(145deg, rgba(39, 39, 39, 0), rgba(29, 29, 29, 0)); /* Gradiente com leve aumento na opacidade */
     backdrop-filter: blur(10px); /* Desfoque um pouco mais acentuado */
     width: 430px;
-    border: 2px solid rgba(153, 109, 255, 0.8); /* Borda com opacidade ligeiramente maior */
+    border: 2px solid rgba(153, 109, 255, 0.6); /* Borda com opacidade ligeiramente maior */
     border-radius: 16px; /* Borda mais arredondada para um toque suave */
     overflow: hidden;
     outline: none;
@@ -63,7 +63,7 @@ body {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    border:  2px solid rgba(153, 109, 255, 0.8);
+    border:  2px solid rgba(153, 109, 255, 0.6);
     box-shadow: 0 0 30px rgba(153, 109, 255, 0.6);
     transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), 
                 box-shadow 0.6s cubic-bezier(0.4, 0.0, 0.2, 1),
@@ -72,7 +72,6 @@ body {
 }
 
 .card .info-section img:hover {
-    transform: scale(1.05);
     box-shadow: 0 0 50px rgba(153, 109, 255, 0.8);
     content: url('Roboto (1).png'); /* Imagem ao passar o mouse */
 }
