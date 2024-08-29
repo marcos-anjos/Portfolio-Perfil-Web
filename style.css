@@ -72,6 +72,7 @@ body {
 }
 
 .card .info-section img:hover {
+    transform: scale(1.05); /* Escalonamento da imagem ao passar o mouse */
     box-shadow: 0 0 50px rgba(153, 109, 255, 0.8);
     content: url('Roboto (1).png'); /* Imagem ao passar o mouse */
 }
