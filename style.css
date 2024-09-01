@@ -73,12 +73,12 @@ body {
 
 .card .info-section img:hover {
     box-shadow: 0 0 50px rgba(153, 109, 255, 0.8);
-    content: url('Transhumans - Bueno (1).png'); /* Imagem ao passar o mouse */
+    content: url('img/Cat GIF.gif'); /* Imagem ao passar o mouse */
 }
 
 /* Preload das imagens para evitar delay na transição */
 .card .info-section::before {
-    content: url('img/Transhumans - Waiting (2).png') url('Transhumans - Bueno (1).png');
+    content: url('img/Transhumans - Waiting (2).png') url('img/Cat GIF.gif');
     position: absolute;
     width: 0;
     height: 0;
